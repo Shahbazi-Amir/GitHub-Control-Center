@@ -1,0 +1,13 @@
+{
+  "name": "github-control-center",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Private local dashboard for GitHub repository storage, Actions pressure, monitoring and safe cleanup.",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/server.mjs && node --check src/policy.mjs && node --check public/app.js && npm test"
+  }
+}

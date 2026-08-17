@@ -1,0 +1,5 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GitHub Control Center</title><link rel="stylesheet" href="/styles.css"></head><body>
+<header><div><h1>GitHub Control Center</h1><p>مانیتورینگ و Cleanup خصوصی مخزن‌ها — بدون مصرف GitHub Actions</p></div><button id="refresh">↻ بروزرسانی</button></header>
+<main><section id="summary" class="cards"></section><section class="toolbar"><input id="filter" placeholder="جستجوی مخزن…"><label><input type="checkbox" id="auto"> Cleanup خودکار امن</label><label>آستانه <input id="threshold" type="number" min="50" max="100" value="85">%</label><label>هر <input id="interval" type="number" min="1" max="168" value="6"> ساعت</label><button id="saveSettings">ذخیره</button></section><div id="status"></div><section id="repos"></section></main>
+<dialog id="modal"><div id="modalBody"></div><form method="dialog"><button>بستن</button></form></dialog>
+<script type="module" src="/app.js"></script></body></html>
